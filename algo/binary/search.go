@@ -1,12 +1,10 @@
 package binary
 
 import (
-	"fmt"
 	"math"
 )
 
 func Search(haystack []int, needle int) bool {
-	fmt.Println(haystack, needle)
 	min := uint(0)
 	max := uint(len(haystack))
 	for min < max {
