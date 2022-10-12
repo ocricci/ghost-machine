@@ -5,12 +5,12 @@ import (
 	"testing"
 )
 
-func testCases() [][]int {
+func searchTestCases() [][]int {
 	return [][]int{[]int{1, 2, 3, 4}, []int{1, 2, 3, 4, 5, 6, 7}}
 }
 
 func TestSearchExistingNumber(t *testing.T) {
-	for _, testCase := range testCases() {
+	for _, testCase := range searchTestCases() {
 		m := uint(math.Floor(float64(len(testCase) / 2)))
 		result := Search(testCase, testCase[m])
 		if !result {
